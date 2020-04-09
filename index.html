@@ -2,34 +2,77 @@
 <html lang="en">
 
 <head>
+  <title>Yim’s Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIU YIMU(YIM)</title>
+  <link rel="stylesheet" href="https://lsong.org/css/stylesheet.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./app.js"></script>
 </head>
 
-<body>
-  <h1>LIU YIMU(YIM)'s Home Page</h1>
-  <p>Hi, my name is Liu Yimu (Yim), I born in 8/4 2020 in Beijing, China.</p>
+<body class="container">
+  <header class="header">
+    <h1>Yim’s Home</h1>
+    <nav id="navbar" class="nav nav-bar pull-right">
+      <a href="/">home</a>
+      <a href="/posts">blog</a>
+      <a href="/photos">photos</a>
+      <a href="/gallery">gallery</a>
+      <a href="/music">music</a>
+    </nav>
+    <hr />
+  </header>
 
-  <section id="posts">
-    <h3>posts</h3>
-    <ul>
-      <li>
-        <a href="">hello world</a>
-      </li>
-    </ul>
-  </section>
+  <main>
 
-  <section id="photos">
-    <h3>photos</h3>
-    <ul>
-      <li><a href="">my pic</a></li>
-    </ul>
-  </section>
+    <section>
+      <h2>Hello 👋</h2>
+      <p>Hi, my name is Yim, I born in 2019 in Beijing, China.</p>
+      <div class="bitcoin"></div>
+    </section>
+
+    <section id="favorites">
+      <h2>My Favorites</h2>
+      <ul>
+        <li>🎵：<a href="https://www.youtube.com/watch?v=nY3NuvGnAb0">Two Tigers</a></li>
+        <li>🎬：<a href="https://www.imdb.com/title/tt0426769">Peppa Pig</a></li>
+        <li>🎬：<a href="https://www.youtube.com/user/OfficialPawPatrol">Paw Patrol</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Reading books</h2>
+      <ul>
+        <li><a href="https://www.goodreads.com/book/show/328439.I_Am_a_Bunny">I Am a Bunny by Ole Risom</a></li>
+        <li><a href="https://www.heinemann.com/collection/lliorange">Leveled Literacy Intervention (LLI) - Orange -
+            Heinemann</a></li>
+      </ul>
+    </section>
+
+    <section id="photos">
+      <h2>Gallery</h2>
+      <ul>
+        <li><a href="/gallery/#lion">🦁️ 方狮子画像</a></li>
+        <li><a href="/gallery/#universe">🪐 宇宙中的点</a></li>
+        <li><a href="/gallery/#the-starry-night">🌃 梵高的星月夜</a></li>
+      </ul>
+      <a href="/gallery">See more works on my gallery 😊</a>
+    </section>
+
+    <section id="posts">
+      <h2>Posts</h2>
+      <ul>
+        <li>
+          <a href="/posts/alphabet.html">Alphabet</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
     <hr />
-    &copy; liuyimu 08/04/2020 ~ now
+    &copy; liuyimu 2019 ~ now
   </footer>
 </body>
 
