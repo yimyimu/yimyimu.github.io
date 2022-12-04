@@ -2,6 +2,7 @@
 .bitcoin {
   float: right;
   margin-right: 160px;
+  cursor: pointer;
 }
 
 .bitcoin {
