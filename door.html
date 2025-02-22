@@ -18,7 +18,7 @@ import mqtt from 'https://esm.sh/mqtt';
 const client = mqtt.connect("wss://broker.emqx.io:8084/mqtt");
 
 client.on('connect', () => {
-    btn.textContent = "Open"
+    btn.textContent = "开门"
     btn.disabled = false
 });
 
