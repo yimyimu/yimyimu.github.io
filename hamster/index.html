@@ -14,31 +14,30 @@
       padding: 20px;
     }
     
-    .hamster-image {
+    .hamster-emoji {
+      font-size: 120px;
+      text-align: center;
+      margin: 30px 0;
+      animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    .hamster-image-placeholder {
       width: 100%;
       max-width: 600px;
-      height: auto;
+      height: 400px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       border-radius: 10px;
-      margin: 20px 0;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    .hamster-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin: 20px 0;
-    }
-    
-    .hamster-gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-    
-    .hamster-gallery img:hover {
-      transform: scale(1.05);
     }
     
     .fact-box {
@@ -62,6 +61,36 @@
     .back-link:hover {
       background-color: #0056b3;
     }
+    
+    .hamster-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+    
+    .hamster-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .hamster-card .emoji {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+    
+    .hamster-card h4 {
+      margin: 10px 0;
+      color: #333;
+    }
+    
+    .hamster-card p {
+      font-size: 14px;
+      color: #666;
+    }
   </style>
 </head>
 
@@ -78,19 +107,20 @@
       <p>Hamsters are small, adorable rodents that make wonderful pets! They have soft fur, tiny paws, and cute cheeks that they fill with food.</p>
     </section>
 
+    <div class="hamster-emoji">🐹</div>
+
     <section>
       <h2>Meet Our Hamster</h2>
       <div class="fact-box">
         <p>🌟 <strong>小布丁 (Xiao Buding)</strong> is our beloved hamster!</p>
+        <p>小布丁 is a cute and friendly hamster who loves to explore and play!</p>
       </div>
       
-      <!-- Cute hamster image placeholder -->
-      <img 
-        src="https://images.unsplash.com/photo-1525097437325-696f7318c666?w=600&h=400&fit=crop" 
-        alt="Cute Hamster" 
-        class="hamster-image"
-      />
-      <p><em>Photo: A adorable hamster like 小布丁</em></p>
+      <!-- Cute hamster image placeholder with emoji -->
+      <div class="hamster-image-placeholder">
+        🐹💕
+      </div>
+      <p style="text-align: center;"><em>This represents our adorable 小布丁!</em></p>
     </section>
 
     <section>
@@ -102,17 +132,35 @@
           <li>🏃 They love to run on exercise wheels!</li>
           <li>💤 They can sleep up to 14-18 hours a day!</li>
           <li>🥗 Their favorite foods include seeds, vegetables, and fruits!</li>
+          <li>🎯 They have excellent sense of smell and hearing!</li>
+          <li>🦷 Their teeth never stop growing!</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Hamster Gallery</h2>
+      <h2>Hamster Types</h2>
       <div class="hamster-gallery">
-        <img src="https://images.unsplash.com/photo-1518440464709-1157d8378438?w=300&h=300&fit=crop" alt="Cute Hamster 1">
-        <img src="https://images.unsplash.com/photo-1499349982488-36c006715f0c?w=300&h=300&fit=crop" alt="Cute Hamster 2">
-        <img src="https://images.unsplash.com/photo-1473725328174-d6d89e08d1f8?w=300&h=300&fit=crop" alt="Cute Hamster 3">
-        <img src="https://images.unsplash.com/photo-1515463138280-91ee598a7d3a?w=300&h=300&fit=crop" alt="Cute Hamster 4">
+        <div class="hamster-card">
+          <div class="emoji">🐹</div>
+          <h4>Syrian Hamster</h4>
+          <p>Large and friendly</p>
+        </div>
+        <div class="hamster-card">
+          <div class="emoji">🐹</div>
+          <h4>Dwarf Hamster</h4>
+          <p>Small and social</p>
+        </div>
+        <div class="hamster-card">
+          <div class="emoji">🐹</div>
+          <h4>Robo Hamster</h4>
+          <p>Fast and curious</p>
+        </div>
+        <div class="hamster-card">
+          <div class="emoji">🐹</div>
+          <h4>Chinese Hamster</h4>
+          <p>Long and slender</p>
+        </div>
       </div>
     </section>
 
@@ -125,6 +173,7 @@
         <li>🧹 Clean the cage regularly</li>
         <li>🎾 Give toys and exercise opportunities</li>
         <li>❤️ Handle gently and build trust</li>
+        <li>🌡️ Keep temperature comfortable (20-25°C)</li>
       </ul>
     </section>
 
@@ -136,7 +185,22 @@
         <li>Sometimes shy at first, then very friendly</li>
         <li>Love to explore and discover new things</li>
         <li>Can be very affectionate with their owners</li>
+        <li>Have unique personalities just like people!</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>小布丁's Daily Life</h2>
+      <p>A typical day in 小布丁's life includes:</p>
+      <div class="fact-box">
+        <ul>
+          <li>🌅 Morning: Sleeping and resting</li>
+          <li>🌞 Afternoon: Waking up, exploring cage</li>
+          <li>🌅 Evening: Most active time, playing and eating</li>
+          <li>🌙 Night: Running on wheel, exploring</li>
+          <li>💤 Late night: Resting and storing food</li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -144,6 +208,7 @@
     <hr />
     <p>&copy; Yim's Home - Hamster Page</p>
     <p>🐹 Made with love for 小布丁 and all hamsters!</p>
+    <p>💕 Remember: Every hamster deserves a loving home!</p>
   </footer>
 </body>
 
