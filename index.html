@@ -10,7 +10,7 @@
   <script type="module" src="./app.js"></script>
 </head>
 
-<body class="container">
+<body class="container layout-container">
   <header class="header">
     <h1>Yim’s Home</h1>
     <nav id="navbar" class="nav nav-bar pull-right">
@@ -23,20 +23,24 @@
     <hr />
   </header>
 
-  <main>
+  <main class="content layout-content">
 
-    <section>
+    <section id="intro">
       <h2>Hello 👋</h2>
-      <p>Hi, my name is Yim, I born in 2019 in Beijing, China.</p>
+      <p>Hi, my name is Yim, I was born in 2019 in Beijing, China. I love building circuits and experimenting with
+        CircuitJS simulator. I enjoy computer programming, learning Python and JavaScript. I also like LEGO Wedo 2.0 and
+        Spike Prime to build robots, and Matrix:bit (ESP32-based board running mPython, similar to micro:bit).</p>
       <div class="bitcoin"></div>
     </section>
 
     <section id="favorites">
       <h2>My Favorites</h2>
       <ul>
+        <li>🔌：CircuitJS 电路模拟器</li>
+        <li>💻：计算机编程 (Python, JavaScript)</li>
+        <li>🧱：LEGO Wedo 2.0 / Spike Prime</li>
+        <li>📱：Matrix:bit (ESP32 + mPython)</li>
         <li>🎵：<a href="https://www.youtube.com/watch?v=nY3NuvGnAb0">Two Tigers</a></li>
-        <li>🎬：<a href="https://www.imdb.com/title/tt0426769">Peppa Pig</a></li>
-        <li>🎬：<a href="https://www.youtube.com/user/OfficialPawPatrol">Paw Patrol</a></li>
       </ul>
     </section>
 
@@ -68,12 +72,50 @@
       </ul>
     </section>
 
+    <section>
+      <h2>Products</h2>
+      <ul id="products" class="list">
+        <li class="list-item">
+          <img src="https://liuyimu.com/caterpillar-transfer/screenshot.png" alt="">
+          <div class="list-item-content">
+            毛毛虫点读笔下载器
+          </div>
+          <a href="https://liuyimu.com/caterpillar-transfer/">立即下载</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="videos">
+      <h2>Videos</h2>
+      <div class="video-grid">
+        <div class="video-item">
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/0PWd5__jE0M?si=52u4tk-CGUr5J56r"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Circuit Protection with Relay 继电器电路保护 | 一键自锁、过流断电功能</p>
+        </div>
+        <div class="video-item">
+          <iframe width="320" height="180" src="https://www.youtube.com/embed/-s8uPLj9ZUE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>LEGO Obstacle-Avoiding Car 乐高避障小车 | Build a Smart Car for Beginners</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <hr />
+  <footer class="flex flex-jc-between flex-center">
     &copy; liuyimu 2019 ~ now
+    <nav class="social-links flex gap-10">
+      <a href="https://x.com/yimyimu">🐦 @yimyimu</a>
+      <a href="https://youtube.com/@yimyimu">📺 @yimyimu</a>
+      <a href="https://github.com/yimyimu">🐙 @yimyimu</a>
+    </nav>
   </footer>
 </body>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </html>

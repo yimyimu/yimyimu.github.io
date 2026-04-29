@@ -1,0 +1,14 @@
+@import url(https://lsong.org/stylesheets/list.css);
+@import url(https://lsong.org/stylesheets/card.css);
+@import url(https://lsong.org/stylesheets/flex.css);
+
+#products img {
+    width: 100px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+
